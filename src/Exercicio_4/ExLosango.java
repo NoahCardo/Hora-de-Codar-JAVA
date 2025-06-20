@@ -2,7 +2,7 @@ package Exercicio_4;
 
 import java.util.Scanner;
 
-public class ex_losango {
+public class ExLosango {
     public static double calcularArea() {
    System.out.println("Informe-nos Sobre a Maior Diagonal de seu Losango:")
                 double diag_maior = entrada.nextDouble();
