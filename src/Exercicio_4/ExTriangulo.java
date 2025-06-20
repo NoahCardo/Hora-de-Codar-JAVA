@@ -2,7 +2,7 @@ package Exercicio_4;
 
 import java.util.Scanner;
 
-public class ex_triangulo {
+public class ExTriangulo {
     public static double calcularArea() {
    System.out.println("Informe-nos a Base de seu Triângulo:")
                 double base = entrada.nextDouble();
