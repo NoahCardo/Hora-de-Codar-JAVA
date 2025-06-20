@@ -2,7 +2,7 @@ package Exercicio_4;
 
 import java.util.Scanner;
 
-public class ex_retangulo {
+public class ExRetangulo {
     public static double calcularArea() {
     System.out.println("Informe-nos a Base de seu Retângulo:");
                 double base = entrada.nextDouble();  //double: Tipo de dado para números decimais de precisão dupla
