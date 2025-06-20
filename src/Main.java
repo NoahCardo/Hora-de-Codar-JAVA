@@ -171,25 +171,25 @@ public class Main {
         double area = 0;
         switch(opcao) {
             case 1: // Retângulo
-                area = ex_retangulo.calcularArea();
+                area = ExRetangulo.calcularArea();
                 break;
             case 2: // Quadrado
-                area = ex_quadrado.calcularArea();
+                area = ExQuadrado.calcularArea();
                 break;
             case 3: //Losango
-                area = ex_losango.calcularArea();
+                area = ExLosango.calcularArea();
                 break;
             case 4: // Trapézio
-                area = ex_trapezio.calcularArea();
+                area = ExTrapezio.calcularArea();
                 break;
             case 5: // Paralelogramo
-                area = ex_paralelogramo.calcularArea();
+                area = ExParalelogramo.calcularArea();
                 break;
             case 6: // Triângulo
-                area = ex_triangulo.calcularArea();
+                area = ExTriangulo.calcularArea();
                 break;
             case 7: // Círculo
-                area = ex_circulo.calcularArea();
+                area = ExCirculo.calcularArea();
                 break;
             default:
                 System.out.println("Opção Inválida!");
