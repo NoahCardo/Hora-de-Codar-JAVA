@@ -1,3 +1,7 @@
+import Exercicio_4.*;
+
+import java.time.Year;
+
 import java.util.Scanner;
 
 public class Main {
@@ -166,56 +170,29 @@ public class Main {
         
         switch(opcao) {
             case 1: // Retângulo
-                System.out.println("Informe-nos a Base de seu Retângulo:");
-                double base = entrada.nextDouble();  //double: Tipo de dado para números decimais de precisão dupla
-                System.out.println("Agora, Informe-nos a Altura de seu Retângulo:");
-                double altura = entrada.nextDouble();
-                System.out.println("A Área de seu Retângulo Equivale A: " + (base * altura) + " cm²!");
+                area = ex_retangulo.calcularArea();
                 break;
             case 2: // Quadrado
-                System.out.println("Informe-nos Sobre o Primeiro Lado de seu Quadrado:");
-                double lado1 = entrada.nextDouble();
-                System.out.println("Agora, Informe-nos Sobre o Segundo Lado de seu Quadrado:");
-                double lado2 = entrada.nextDouble();
-                System.out.println("A Área de seu Quadrado Equivale A:" + (lado1 * lado2) + " cm²!");
+                area = ex_quadrado.calcularArea();
                 break;
-            case 3: // Losango
-                System.out.println("Informe-nos Sobre a Maior Diagonal de seu Losango:")
-                double diag_maior = entrada.nextDouble();
-                System.out.println("Agora, Informe-nos Sobre a Menor Diagonal de seu Losango:");
-                double diag_menor = entrada.nextDouble();
-                System.out.println("A Área de seu Losango Equivale A: " + ((diag_maior * diag_menor)/2) + " cm²!");  
+            case 3: //Losango
+                area = ex_losango.calcularArea();
                 break;
             case 4: // Trapézio
-                System.out.println("Informe-nos Sobre a Maior Base de seu Trapézio:")
-                double base_maior = entrada.nextDouble();
-                System.out.println("Agora, Informe-nos Sobre a Menor Base de seu Trapézio:");
-                double base_menor = entrada.nextDouble();
-                System.out.println("E, Por Fim, Informe-nos Sobre a Altura de seu Trapézio:");
-                double altura = entrada.nextDouble();
-                System.out.println("A Área de seu Trapézio Equivale A: " + ((base_maior + base_menor) * altura/2) + " cm²!");
+                area = ex_trapezio.calcularArea();
                 break;
             case 5: // Paralelogramo
-                System.out.println("Informe-nos a Base de seu Paralelogramo:")
-                double base = entrada.nextDouble();
-                System.out.println("Agora, Informe-nos a Altura de seu Paralelogramo");
-                double altura = entrada.nextDouble();
-                System.out.println("A Área de seu Paralelogramo Equivale A: " + (base * altura) + " cm²!");
+                area = ex_paralelogramo.calcularArea();
                 break;
             case 6: // Triângulo
-                System.out.println("Informe-nos a Base de seu Triângulo:")
-                double base = entrada.nextDouble();
-                System.out.println("Agora, Informe-nos a Altura de seu Triângulo");
-                double altura = entrada.nextDouble();
-                System.out.println("A Área de seu Triângulo Equivale A: " + ((base * altura)/2) + " cm²!");
+                area = ex_triangulo.calcularArea();
                 break;
             case 7: // Círculo
-                System.out.println("Basta nos Informar o Raio do Mesmo! Qual É o Raio de Seu Círculo?")
-                double raio = entrada.nextDouble();
-                System.out.println("A Área de seu Círculo Equivale A: " + (Math.PI * (raio * raio)) + " cm²!");
+                area = ex_circulo.calcularArea();
                 break;
             default:
-                System.out.println("Opção inválida!");
+                System.out.println("Opção Inválida!");
+                System.exit(0);
         }
         entrada.close();
     }
