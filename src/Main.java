@@ -167,7 +167,8 @@ public class Main {
         System.out.println("Escolha uma Figura Geométrica:");
         System.out.println("1 - Retângulo\n2 - Quadrado\n3 - Losango\n4 - Trapézio\n5 - Paralelogramo\n6 - Triângulo\n7 - Círculo");
         int opcao = entrada.nextInt();
-        
+
+        double area = 0;
         switch(opcao) {
             case 1: // Retângulo
                 area = ex_retangulo.calcularArea();
@@ -192,8 +193,10 @@ public class Main {
                 break;
             default:
                 System.out.println("Opção Inválida!");
-                System.exit(0);
+                entrada.close();
+                return;
         }
+        System.out.println("A Área Calculada Equivale A: " + area);
         entrada.close();
     }
 
