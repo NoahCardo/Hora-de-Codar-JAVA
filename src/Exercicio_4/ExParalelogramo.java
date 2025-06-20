@@ -2,7 +2,7 @@ package Exercicio_4;
 
 import java.util.Scanner;
 
-public class ex_paralelogramo {
+public class ExParalelogramo {
     public static double calcularArea() {
    System.out.println("Informe-nos a Base de seu Paralelogramo:")
                 double base = entrada.nextDouble();
