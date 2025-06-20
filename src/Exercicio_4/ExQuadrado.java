@@ -2,7 +2,7 @@ package Exercicio_4;
 
 import java.util.Scanner;
 
-public class ex_quadrado {
+public class ExQuadrado {
     public static double calcularArea() {
    System.out.println("Informe-nos Sobre o Primeiro Lado de seu Quadrado:");
                 double lado1 = entrada.nextDouble();
