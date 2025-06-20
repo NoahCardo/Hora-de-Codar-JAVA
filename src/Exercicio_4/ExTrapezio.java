@@ -2,7 +2,7 @@ package Exercicio_4;
 
 import java.util.Scanner;
 
-public class ex_trapezio {
+public class ExTrapezio {
     public static double calcularArea() {
    System.out.println("Informe-nos Sobre a Maior Base de seu Trapézio:")
                 double base_maior = entrada.nextDouble();
