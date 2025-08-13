@@ -176,7 +176,7 @@ public class Main {
             case 2: // Quadrado
                 area = ExQuadrado.calcularArea();
                 break;
-            case 3: //Losango
+            case 3: // Losango
                 area = ExLosango.calcularArea();
                 break;
             case 4: // Trapézio
